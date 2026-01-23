@@ -2,10 +2,11 @@ Package: nichenetr
 Type: Package
 Title: Modeling Intercellular Communication by Linking Ligands to Target Genes with NicheNet
 Version: 2.2.2
-Authors@R: c(person("Zaoqu", "Liu", role = c("aut", "cre"), email = "liuzaoqu@163.com"),
-            person("Robin", "Browaeys", role = c("aut")),
-            person("Wouter", "Saelens", role = c("aut")),
-            person("Yvan", "Saeys", role = c("aut")))
+Authors@R: c(
+    person("Zaoqu", "Liu", email = "liuzaoqu@163.com", role = c("aut", "cre")),
+    person("Robin", "Browaeys", role = "aut"),
+    person("Wouter", "Saelens", role = "aut"),
+    person("Yvan", "Saeys", role = "aut"))
 Description: NicheNet is a computational framework for modeling intercellular communication 
     by linking extracellular ligands to intracellular gene regulatory changes. It integrates 
     prior knowledge of ligand-receptor interactions, signaling pathways, and transcription 
