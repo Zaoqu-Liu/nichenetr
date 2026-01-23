@@ -1,0 +1,12 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+inst/doc
+vignettes/*.html
+omnipathr-log/
+
+# Compiled C++ files
+src/*.o
+src/*.so
+src/*.dll
