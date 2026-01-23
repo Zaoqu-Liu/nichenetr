@@ -10,3 +10,7 @@ omnipathr-log/
 src/*.o
 src/*.so
 src/*.dll
+
+# Build artifacts
+*.tar.gz
+*.Rcheck/
