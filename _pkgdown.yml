@@ -1,0 +1,52 @@
+url: https://zaoqu-liu.github.io/nichenetr/
+
+template:
+  bootstrap: 5
+  bootswatch: flatly
+
+home:
+  title: NicheNet - Modeling Intercellular Communication
+
+authors:
+  Zaoqu Liu:
+    href: https://github.com/Zaoqu-Liu
+  Robin Browaeys:
+    href: https://github.com/browaeysrobin
+
+navbar:
+  structure:
+    left:  [intro, reference, articles, news]
+    right: [search, github]
+  components:
+    intro:
+      text: Get Started
+      href: articles/algorithm_overview.html
+    articles:
+      text: Vignettes
+      menu:
+      - text: Algorithm Overview
+        href: articles/algorithm_overview.html
+      - text: Mathematical Foundation
+        href: articles/mathematical_foundation.html
+      - text: "---"
+      - text: Step-by-step Analysis
+        href: articles/seurat_steps.html
+      - text: Seurat Wrapper
+        href: articles/seurat_wrapper.html
+    news:
+      text: Changelog
+      href: news/index.html
+
+reference:
+- title: All Functions
+  contents:
+  - matches(".")
+
+articles:
+- title: All vignettes
+  navbar: ~
+  contents:
+  - matches(".")
+
+news:
+  one_page: true
