@@ -70,6 +70,7 @@ construct_weighted_networks <- function(lr_network, sig_network, gr_network, sou
       ungroup()
     weighted_networks <- list(lr = lr_network_w %>% ungroup(), sig = sig_network_w %>% ungroup(), gr = gr_network_w %>% ungroup())
   }
+  return(weighted_networks)
 }
 #' @title Add a new data source to the model
 #'
@@ -103,8 +104,8 @@ add_new_datasource <- function(new_source, network, new_weight, source_weights_d
   if (!is.data.frame(network) && !is.null(network)) {
     stop("network must be a data frame or tibble object")
   }
-  if (!is.numeric(new_weight) && length(new_weight) != 1 && (new_weight >= 0 | new_weight <= 1)) {
-    stop("new_weight must be a one number between 0 and 1")
+  if (!is.numeric(new_weight) || length(new_weight) != 1 || new_weight < 0 || new_weight > 1) {
+    stop("new_weight must be a single number between 0 and 1")
   }
   if (!is.data.frame(source_weights_df) || sum((source_weights_df$weight > 1)) != 0 || new_weight > 1) {
     stop("source_weights_df must be a data frame or tibble object and no data source weight may be higher than 1")

@@ -6,22 +6,25 @@
 \alias{nichenetr-package}
 \title{nichenetr: Modeling Intercellular Communication by Linking Ligands to Target Genes with NicheNet}
 \description{
-This package allows you the investigate intercellular communication from a computational perspective. More specifically, it allows to investigate how interacting cells influence each other's gene expression. Functionalities of this package (e.g. including predicting extracellular upstream regulators and their affected target genes) build upon a probabilistic model of ligand-target links that was inferred by data-integration.
+NicheNet is a computational framework for modeling intercellular communication by linking extracellular ligands to intracellular gene regulatory changes. It integrates prior knowledge of ligand-receptor interactions, signaling pathways, and transcription factor regulation to predict which ligands from sender cells affect gene expression in receiver cells. This enables mechanistic hypothesis generation about cell-cell communication events observed in transcriptomic data.
 }
 \seealso{
 Useful links:
 \itemize{
   \item \url{https://github.com/Zaoqu-Liu/nichenetr}
+  \item \url{https://zaoqu-liu.github.io/nichenetr/}
   \item Report bugs at \url{https://github.com/Zaoqu-Liu/nichenetr/issues}
 }
 
 }
 \author{
-\strong{Maintainer}: Chananchida Sang-aram \email{chananchida.sangaram@ugent.be}
+\strong{Maintainer}: Zaoqu Liu \email{liuzaoqu@163.com}
 
 Authors:
 \itemize{
   \item Robin Browaeys
+  \item Wouter Saelens
+  \item Yvan Saeys
 }
 
 }
