@@ -9,3 +9,6 @@
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
+^vignettes/.*\.Rmd\.orig$
+^vignettes/.*_files$
+^vignettes/.*\.md$
