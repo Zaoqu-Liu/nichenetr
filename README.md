@@ -1,14 +1,14 @@
 # nichenetr
 
-📖 **Documentation**: https://zaoqu-liu.github.io/nichenetr/
-
 <!-- badges: start -->
 [![R-universe](https://zaoqu-liu.r-universe.dev/badges/nichenetr)](https://zaoqu-liu.r-universe.dev/nichenetr)
-[![R build status](https://github.com/Zaoqu-Liu/nichenetr/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/Zaoqu-Liu/nichenetr/actions)
+[![R-CMD-check](https://github.com/Zaoqu-Liu/nichenetr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Zaoqu-Liu/nichenetr/actions/workflows/R-CMD-check.yaml)
 [![Coverage Status](https://codecov.io/gh/Zaoqu-Liu/nichenetr/branch/master/graph/badge.svg)](https://codecov.io/gh/Zaoqu-Liu/nichenetr)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7074291.svg)](https://doi.org/10.5281/zenodo.7074291)
 [![Nature Methods](https://img.shields.io/badge/Nature%20Methods-10.1038%2Fs41592--019--0667--5-blue)](https://www.nature.com/articles/s41592-019-0667-5)
 <!-- badges: end -->
+
+📖 **Documentation**: https://zaoqu-liu.github.io/nichenetr/
 
 ## Overview
 

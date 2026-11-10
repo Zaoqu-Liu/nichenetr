@@ -67,11 +67,18 @@ calculate_de <- function(seurat_obj, celltype_colname,
   Idents(seurat_obj) <- seurat_obj[[celltype_colname, drop = TRUE]]
 
   FindAllMarkers_args$object <- seurat_obj
-  DE_table <- do.call(FindAllMarkers, FindAllMarkers_args) %>%
-    rename(cluster_id = cluster)
+  DE_table <- do.call(FindAllMarkers, FindAllMarkers_args)
+  
 
-  SeuratV4 <- c("avg_log2FC") %in% colnames(DE_table)
-  if (!SeuratV4) {
+  # Handle different column names across Seurat versions
+  if ("cluster" %in% colnames(DE_table)) {
+    DE_table <- DE_table %>% dplyr::rename(cluster_id = cluster)
+  } else if ("ident" %in% colnames(DE_table)) {
+    DE_table <- DE_table %>% dplyr::rename(cluster_id = ident)
+  }
+  
+  # Handle log fold change column naming
+  if ("avg_logFC" %in% colnames(DE_table) && !"avg_log2FC" %in% colnames(DE_table)) {
     DE_table <- DE_table %>% dplyr::rename(avg_log2FC = avg_logFC)
   }
 
